@@ -1,0 +1,18 @@
+{
+    "manifest_version":3,
+    "name":"Social Media Blocker",
+    "description":"Extension to block social media sites",
+    "version":"1.0.0",
+    "icons":{"128":"./assets/images/logo128.png"},
+    "action":{
+        "default_icon":"./assets/images/logo16.png",
+        "default_popup":"./index.html"
+    },
+    "contentscripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["popup.js"]
+        }
+    ],
+    "permissions":["activeTab"]
+}
